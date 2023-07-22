@@ -72,7 +72,7 @@ export const GreeterContractInteractions: FC = () => {
   return (
     <>
       <div tw="flex grow flex-col space-y-4 max-w-[20rem]">
-        <h2 tw="text-center font-mono text-gray-400">Greeter Smart Contract</h2>
+        <h2 tw="text-center font-mono text-gray-400">HealthDOT Smart Contract</h2>
 
         {/* Fetched Greeting */}
         <Card variant="outline" p={4} bgColor="whiteAlpha.100">

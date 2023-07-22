@@ -14,13 +14,9 @@ const StyledIconLink = styled(Link)(() => [
 ])
 
 export const HomePageTitle: FC = () => {
-  const title = 'ink!athon'
+  const title = 'HealthDOT powered by ink!athon'
   const desc = 'Full-Stack DApp Boilerplate for Substrate and ink! Smart Contracts'
-  const githubHref = 'https://github.com/scio-labs/inkathon'
-  const deployHref = 'https://github.com/scio-labs/inkathon#deployment'
-  const sponsorHref = 'mailto:hello@scio.xyz'
-  const telegramHref = 'https://t.me/inkathon'
-
+  const githubHref = 'https://github.com/HealthDot'
   return (
     <>
       <div tw="flex flex-col items-center text-center font-mono">
@@ -54,21 +50,24 @@ export const HomePageTitle: FC = () => {
             Scio Labs
           </a>
         </p>
+
+        {/* Tagline & Links */}
+        <p tw="mt-2 text-gray-600 text-sm">
+          Modified By{' '}
+          <a
+            href="https://zoma.dev"
+            target="_blank"
+            tw="font-semibold text-gray-500 hover:text-gray-100"
+          >
+            Akanimoh Osutuk
+          </a>
+        </p>
         <p tw="mt-4 mb-6 text-gray-400">{desc}</p>
 
         {/* Github & Vercel Buttons */}
         <div tw="flex space-x-2">
           <StyledIconLink href={githubHref} target="_blank">
             <Image src={githubIcon} priority height={32} alt="Github Repository" />
-          </StyledIconLink>
-          <StyledIconLink href={deployHref} target="_blank">
-            <Image src={vercelIcon} priority height={32} alt="Deploy with Vercel" />
-          </StyledIconLink>
-          <StyledIconLink href={telegramHref} target="_blank">
-            <Image src={telegramIcon} priority height={32} alt="Telegram Group" />
-          </StyledIconLink>
-          <StyledIconLink href={sponsorHref} target="_blank">
-            <Image src={sponsorIcon} priority height={32} alt="Sponsor the Project" />
           </StyledIconLink>
         </div>
 
